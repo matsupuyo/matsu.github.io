@@ -119,7 +119,7 @@ body::before {
 /* モバイル対応 */
 @media (max-width: 768px) {
   body {
-    font-size: 28px; /* モバイルでベースフォントを28pxに */
+    font-size: 42px; /* モバイルでベースフォントを42pxに (1.5倍) */
   }
 
   .header-inner {
@@ -131,23 +131,24 @@ body::before {
   }
 
   .main-content {
-    padding: 0 12px 60px;
+    max-width: 100%; /* モバイルで幅を100%に */
+    padding: 20px 20px 80px; /* パディングを増やして中央寄せ */
   }
 
   .link-box {
-    padding: 10px;
+    padding: 20px; /* パディングを増やして文字を大きく見せる */
   }
 
   .link-box h2 {
-    font-size: 2.0em; /* h2を2.0emに */
+    font-size: 3.0em; /* h2を3.0emに (1.5倍) */
   }
 
   h1 {
-    font-size: 2.8em; /* h1を2.8emに */
+    font-size: 4.2em; /* h1を4.2emに (1.5倍) */
   }
 
   .link-box a {
-    font-size: 1.6em; /* リンクテキストを1.6emに */
+    font-size: 2.4em; /* リンクテキストを2.4emに (1.5倍) */
   }
 
   .link-box a img {
